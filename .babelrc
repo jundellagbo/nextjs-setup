@@ -1,0 +1,24 @@
+{
+    "presets": ["next/babel"],
+    "plugins": [
+      [
+          "module-resolver",
+          {
+              "alias": {
+                  "@assets": "./assets",
+                  "@redux": "./redux",
+                  "@components": "./components",
+                  "@api": "./axiosConfig",
+                  "@helpers": "./helpers"
+              }
+          }
+      ],
+      [
+          "styled-jsx/babel",
+          { 
+              "optimizeForSpeed": true,
+              "plugins": ["styled-jsx-plugin-sass"]
+          }
+      ]
+    ]
+  }

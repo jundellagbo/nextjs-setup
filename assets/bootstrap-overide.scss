@@ -1,0 +1,120 @@
+@import './variables.scss';
+.f-shadow {
+    box-shadow: $box-shadow2;
+}
+
+.f-box-shadow-2 {
+    box-shadow: $box-shadow1;
+}
+
+.f-dark {
+    color: $dark!important;
+}
+
+.f-text-light {
+    color: #ffffff!important;
+}
+
+.f-primary {
+    color: $primary!important;
+}
+
+.f-bg-primary {
+    background: $primary!important;
+}
+
+.f-border-radius-4 {
+    border-radius: 4px;
+}
+
+.f-border-radius-60 {
+    border-radius: 60px;
+}
+
+.f-bg-light-grey {
+    background: $lgrey;
+}
+
+.f-btn {
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    &:focus, &:hover, &:active {
+        box-shadow: unset!important;
+        outline: none!important;
+    }
+}
+
+.f-btn-primary {
+    background: $primary!important;
+    border-color: $primary!important;
+    box-shadow: 0px 4px 8px rgba(231, 109, 73, 0.2);
+}
+
+.f-btn-secondary {
+    color: $dark!important;
+    background: #ffffff!important;
+    border-color: $primary!important;
+    box-shadow: 0px 4px 8px rgba(231, 109, 73, 0.2);
+    font-weight: bold;
+}
+
+.btn-loader {
+    position: relative;
+    .btn-loading {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+}
+
+.f-table {
+    thead {
+        tr {
+            background: #EFF2F1!important;
+            th {
+                border: 0!important;
+                background: transparent!important;
+                &:first-child {
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+                &:last-child {
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                }
+            }
+        }
+    }
+    tbody {
+        tr:nth-child(even) {
+            background: #F9F9F9;
+        }
+        tr {
+            td {
+                border: 0!important;
+                &:first-child {
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+                &:last-child {
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+.f-text-12 {
+    font-size: 12px;
+}
+
+.f-text-14 {
+    font-size: 14px;
+}
+
+.f-btn-small {
+    padding: 8px 20px!important;
+}
